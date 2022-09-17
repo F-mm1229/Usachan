@@ -22,4 +22,14 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
+
+    public void toScoreScene()
+    {
+        SceneManager.LoadScene("ScoreScene");
+    }
+
+    public void toTitle()
+    {
+        SceneManager.LoadScene("Title");
+    }
 }
