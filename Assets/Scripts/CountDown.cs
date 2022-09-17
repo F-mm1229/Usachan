@@ -14,7 +14,7 @@ public class CountDown : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CountDownTime = 5.0f;
+        CountDownTime = 60.0f;
     }
 
     // Update is called once per frame
