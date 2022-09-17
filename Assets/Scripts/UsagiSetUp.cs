@@ -9,6 +9,8 @@ public class UsagiSetUp : MonoBehaviour
     public int requests = 1;
     public Text TextRequest;
 
+    public Score score;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class UsagiSetUp : MonoBehaviour
             if (requests == 1)
             {
                 TextRequest.text = "ありがとう！";
+                score.scoreSum += 30;
             }
         }
 
@@ -53,6 +56,7 @@ public class UsagiSetUp : MonoBehaviour
             if (requests == 2)
             {
                 TextRequest.text = "ありがとう！";
+                
             }
         }
 
