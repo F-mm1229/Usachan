@@ -22,6 +22,7 @@ public class UsagiCreator : MonoBehaviour
 
         if (timer >= interval)
         {
+            transform.position = new Vector3(Random.Range(-2.0f, 2.0f), Random.Range(-1.4f, 1.4f), 0);
             Instantiate(usagi, transform.position, transform.rotation);
 
             timer = 0;
