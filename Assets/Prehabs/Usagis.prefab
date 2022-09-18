@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 189711262443214879}
   - component: {fileID: 189711262443214877}
   - component: {fileID: 3411806496603056574}
-  - component: {fileID: 189711262443214878}
   m_Layer: 0
   m_Name: usagi
   m_TagString: usagi
@@ -61,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189711262443214872}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.919983, y: 0.33999634, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children:
   - {fileID: 7655345983898413568}
@@ -178,9 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 643d00143b4a544b189b84d996b09e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requests: 1
-  TextRequest: {fileID: 0}
-  score: {fileID: 0}
+  scoreCount: {fileID: 0}
 --- !u!114 &3411806496603056574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,21 +190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6885f9c632ec74f6eb1bbe01281a7811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &189711262443214878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 189711262443214872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 643d00143b4a544b189b84d996b09e31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  requests: 1
-  TextRequest: {fileID: 0}
-  score: {fileID: 0}
 --- !u!1 &4686966551803959461
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4686966551803959461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.050085783, y: 6.3500185, z: 0}
+  m_LocalPosition: {x: 0.009999275, y: 6.3500185, z: 0}
   m_LocalScale: {x: 0.39999998, y: 0.39999998, z: 1}
   m_Children: []
   m_Father: {fileID: 189711262443214874}

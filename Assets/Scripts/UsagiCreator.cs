@@ -7,7 +7,7 @@ public class UsagiCreator : MonoBehaviour
     public GameObject usagi;
 
     float timer = 0;
-    int interval = 5;
+    int interval = 6;
 
     // Start is called before the first frame update
     void Start()

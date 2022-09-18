@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FoodController : MonoBehaviour
 {
-    public UsagiSetUp usagiSetUp;
+    //public UsagiSetUp usagiSetUp;
     //public int tagId;
 
     //public GameObject ninjin;
@@ -24,11 +24,11 @@ public class FoodController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("usagi") && usagiSetUp.requests == 1)
+        if (collision.gameObject.CompareTag("usagi") && UsagiSetUp.requests == 1)
         {
             Destroy(this.gameObject);
         }
 
-        
+
     }
 }

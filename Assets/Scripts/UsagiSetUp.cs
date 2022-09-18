@@ -6,17 +6,27 @@ using UnityEngine.UI;
 
 public class UsagiSetUp : MonoBehaviour
 {
-    public int requests;
-    public Text TextRequest;
+    public static int requests = 1;
+    //public Text TextRequest;
 
-    public Score score;
+    public GameObject scoreCount;
+    //public GameObject changeSprete;
+    //public GameObject changeRequest;
 
     // Start is called before the first frame update
     void Start()
     {
-        requests = Random.Range(1, 4);
+        //requests = Random.Range(1, 4);
+        //TextRequest = gameObject.Find("")
+        scoreCount = GameObject.Find("ScoreCount");
+        //changeSprete = GameObject.Find("ChangeSprete");
+        //changeRequest = GameObject.Find("ChangeRequest");
 
-        
+        //if (requests == 2)
+        //{
+        //    changeRequest.GetComponent<ChangeRequest>().waterRequest();
+
+        //}
     }
 
     // Update is called once per frame
@@ -33,8 +43,9 @@ public class UsagiSetUp : MonoBehaviour
 
             if (requests == 1)
             {
-                TextRequest.text = "ありがとう！";
-                score.scoreSum += 30;
+                scoreCount.GetComponent<ScoreCount>().ninjinScore();
+                //changeSprete.GetComponent<ChangeSprete>().changeSpreteToHeart();
+
             }
         }
 
@@ -44,8 +55,8 @@ public class UsagiSetUp : MonoBehaviour
 
             if (requests == 2)
             {
-                TextRequest.text = "ありがとう！";
-                
+                //TextRequest.text = "ありがとう！";
+                scoreCount.GetComponent<ScoreCount>().waterScore();
             }
         }
 
@@ -55,7 +66,8 @@ public class UsagiSetUp : MonoBehaviour
 
             if (requests == 3)
             {
-                TextRequest.text = "ありがとう！";
+                scoreCount.GetComponent<ScoreCount>().timothyScore();
+                //TextRequest.text = "ありがとう！";
             }
         }
     }

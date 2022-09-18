@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
-public class Score : MonoBehaviour
+public class ScoreCount : MonoBehaviour
 {
     public int scoreSum = 0;
     public Text TextScore;
@@ -22,5 +22,18 @@ public class Score : MonoBehaviour
 
     }
 
+    public void ninjinScore()
+    {
+        scoreSum += 30;
+    }
 
+    public void waterScore()
+    {
+        scoreSum += 20;
+    }
+
+    public void timothyScore()
+    {
+        scoreSum += 50;
+    }
 }
