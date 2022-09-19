@@ -4,31 +4,25 @@ using UnityEngine;
 
 public class FoodController : MonoBehaviour
 {
-    //public UsagiSetUp usagiSetUp;
-    //public int tagId;
-
-    //public GameObject ninjin;
-    //public GameObject water;
+    float delayUntilDestroyed = 15;
 
     // Start is called before the first frame update
     void Start()
     {
-        //tagId = int.Parse(this.gameObject.tag);
+        Destroy(gameObject, delayUntilDestroyed);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("usagi") && UsagiSetUp.requests == 1)
+        if (collision.gameObject.CompareTag("usagi"))
         {
             Destroy(this.gameObject);
         }
-
-
     }
 }

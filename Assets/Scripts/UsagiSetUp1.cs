@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UsagiSetUp : MonoBehaviour
+public class UsagiSetUp1 : MonoBehaviour
 {
-    public static int requests = 1;
+    public static int requests = 2;
 
     public GameObject scoreCount;
 

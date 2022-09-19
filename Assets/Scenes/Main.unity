@@ -337,7 +337,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &68010679
 GameObject:
@@ -993,7 +993,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u6B8B\u308A\u6642\u9593 : 30.00"
+  m_Text: "\u6B8B\u308A\u6642\u9593 : 30"
 --- !u!222 &667504904
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1095,11 +1095,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770506588}
   m_CullTransparentMesh: 1
---- !u!1 &772233536 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4686966551803959461, guid: 551950e0ee64b41f08de9b12eadd7245, type: 3}
-  m_PrefabInstance: {fileID: 189711262139709385}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &844803624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,7 +1654,7 @@ RectTransform:
   - {fileID: 1444785915}
   - {fileID: 891381046}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1683,7 +1678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1444785915
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2003,7 +1998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9385d67f08ff74557b18257d14472cb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreSum: 0
   TextScore: {fileID: 478062232}
 --- !u!4 &1808735428
 Transform:
@@ -2357,16 +2351,7 @@ PrefabInstance:
       propertyPath: scoreCount
       value: 
       objectReference: {fileID: 1808735426}
-    - target: {fileID: 1200219730862297530, guid: 551950e0ee64b41f08de9b12eadd7245, type: 3}
-      propertyPath: waterImg
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1200219730862297530, guid: 551950e0ee64b41f08de9b12eadd7245, type: 3}
-      propertyPath: ninjinImg
-      value: 
-      objectReference: {fileID: 772233536}
-    m_RemovedComponents:
-    - {fileID: 1200219730862297530, guid: 551950e0ee64b41f08de9b12eadd7245, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 551950e0ee64b41f08de9b12eadd7245, type: 3}
 --- !u!222 &1162090710928759240
 CanvasRenderer:
