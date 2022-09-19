@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 189711262443214875}
   - component: {fileID: 189711262443214876}
   - component: {fileID: 189711262443214879}
-  - component: {fileID: 4064684738985967839}
+  - component: {fileID: 4376466811056888664}
   m_Layer: 0
   m_Name: usagi
   m_TagString: usagi
@@ -177,7 +177,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4064684738985967839
+--- !u!114 &4376466811056888664
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -190,6 +190,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreCount: {fileID: 0}
+  TargetSprite: {fileID: 2690353584172584355}
+  GoodSprite: {fileID: 21300000, guid: c74d00a3a4c034857838987d52326225, type: 3}
+  BadSprite: {fileID: 21300000, guid: b5086e82201a64ece9a7b8e98e8331dc, type: 3}
 --- !u!1 &2690353584172584355
 GameObject:
   m_ObjectHideFlags: 0

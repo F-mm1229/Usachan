@@ -189,8 +189,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 643d00143b4a544b189b84d996b09e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requests: 1
   scoreCount: {fileID: 0}
+  TargetSprite: {fileID: 2690353584172584355}
+  GoodSprite: {fileID: 21300000, guid: c74d00a3a4c034857838987d52326225, type: 3}
+  BadSprite: {fileID: 21300000, guid: b5086e82201a64ece9a7b8e98e8331dc, type: 3}
 --- !u!1 &2690353584172584355
 GameObject:
   m_ObjectHideFlags: 0
