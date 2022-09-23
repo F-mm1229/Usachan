@@ -9,12 +9,15 @@ public class CountDown : MonoBehaviour
     public static float CountDownTime;
     public Text TextCountDown;
 
+    public GameObject scoreCount;
+
     public SceneController sceneController;
 
     // Start is called before the first frame update
     void Start()
     {
         CountDownTime = 30.0f;
+        scoreCount = GameObject.Find("ScoreCount");
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class CountDown : MonoBehaviour
 
         if (CountDownTime <= 0.0f)
         {
+            scoreCount.GetComponent<ScoreCount>().scoreSave();     // スコア保存
             sceneController.toScoreScene();
         }
     }

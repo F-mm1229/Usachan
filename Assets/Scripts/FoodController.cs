@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FoodController : MonoBehaviour
 {
-    float delayUntilDestroyed = 15;
+    float delayUntilDestroyed = 15;         // 何秒後に消すのか
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class FoodController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        // Foodがusagiに当たった時に消す
         if (collision.gameObject.CompareTag("usagi"))
         {
             Destroy(this.gameObject);

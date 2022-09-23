@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class UsagiSetUp_water : MonoBehaviour
 {
-    public static int requests = 2;
-
     public GameObject scoreCount;
+
+    // 変更したい画像（変更前）
     public GameObject TargetSprite;
+
+    // 変更したい画像（変更先）
     public Sprite GoodSprite;
     public Sprite BadSprite;
 
@@ -27,17 +29,18 @@ public class UsagiSetUp_water : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-
+        // もらったご飯によってうさぎの反応を表す画像に変更する
         if (other.gameObject.CompareTag("water"))
         {
             Debug.Log("お水だー！");
-            scoreCount.GetComponent<ScoreCount>().waterScore();
+            scoreCount.GetComponent<ScoreCount>().waterScore();     // スコア加点
             var spriteRenderer = TargetSprite.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = GoodSprite;
         }
         else if (other.gameObject.CompareTag("ninjin"))
         {
             Debug.Log("これじゃない");
+            scoreCount.GetComponent<ScoreCount>().minusScore();     // スコア減点
             var spriteRenderer = TargetSprite.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = BadSprite;
         }

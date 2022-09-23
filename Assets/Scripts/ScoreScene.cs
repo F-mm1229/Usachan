@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class ScoreScene : MonoBehaviour
 {
-    public Text scoreSceneText;
+    public Text score;
+    public Text TotalScore;
+
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +18,8 @@ public class ScoreScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoreSceneText.text = "Score : " + ScoreCount.scoreSum.ToString();
+        score.text = "Score : " + ScoreCount.scoreSum.ToString();
+        TotalScore.text = "Total Score : " + ScoreCount.totalScore.ToString();
         //Debug.Log(ScoreCount.scoreSum);
 
     }
