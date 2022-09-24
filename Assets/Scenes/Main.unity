@@ -577,7 +577,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1689040218}
+      - m_Target: {fileID: 1224483473}
         m_TargetAssemblyTypeName: FoodCreator, Assembly-CSharp
         m_MethodName: generateWater
         m_Mode: 1
@@ -752,6 +752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   usagi_ninjin: {fileID: 189711261512870633, guid: 551950e0ee64b41f08de9b12eadd7245, type: 3}
   usagi_water: {fileID: 189711261512870633, guid: b04e7d9c486834079bde8c08e91892ec, type: 3}
+  usagi_timothy: {fileID: 5516082708915748772, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
 --- !u!4 &171496019
 Transform:
   m_ObjectHideFlags: 0
@@ -1245,7 +1246,7 @@ GameObject:
   - component: {fileID: 629887938}
   - component: {fileID: 629887937}
   m_Layer: 5
-  m_Name: ninjinButton (2)
+  m_Name: timothyButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1316,9 +1317,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 844803625}
-        m_TargetAssemblyTypeName: NinjinCreator, Assembly-CSharp
-        m_MethodName: generateNinjin
+      - m_Target: {fileID: 1224483473}
+        m_TargetAssemblyTypeName: FoodCreator, Assembly-CSharp
+        m_MethodName: generateTimothy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1540,51 +1541,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770506588}
   m_CullTransparentMesh: 1
---- !u!1 &844803624
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 844803626}
-  - component: {fileID: 844803625}
-  m_Layer: 0
-  m_Name: ninjinCreator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &844803625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844803624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 304d7925ad94d4404b440981216e08e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ninjin: {fileID: 1989733160008696678, guid: b9957705001c34bfeb282be936fad487, type: 3}
-  water: {fileID: 2109934562055784996, guid: f4b068ad81bc44d02aad8ead3a9a0d73, type: 3}
---- !u!4 &844803626
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844803624}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.2, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &891381043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,7 +1776,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 844803625}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NinjinCreator, Assembly-CSharp
         m_MethodName: generateNinjin
         m_Mode: 1
@@ -2033,7 +1989,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 844803625}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NinjinCreator, Assembly-CSharp
         m_MethodName: generateNinjin
         m_Mode: 1
@@ -2083,6 +2039,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149810083}
   m_CullTransparentMesh: 1
+--- !u!1 &1224483472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1224483474}
+  - component: {fileID: 1224483473}
+  m_Layer: 0
+  m_Name: FoodCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1224483473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224483472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304d7925ad94d4404b440981216e08e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ninjin: {fileID: 1989733160008696678, guid: b9957705001c34bfeb282be936fad487, type: 3}
+  water: {fileID: 2109934562055784996, guid: f4b068ad81bc44d02aad8ead3a9a0d73, type: 3}
+  timothy: {fileID: 2109934562055784996, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+--- !u!4 &1224483474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224483472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.2, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1270788530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,7 +2191,7 @@ GameObject:
   - component: {fileID: 1403903201}
   - component: {fileID: 1403903200}
   m_Layer: 5
-  m_Name: ninjinButtonText
+  m_Name: timothyButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2847,7 +2849,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 844803625}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: NinjinCreator, Assembly-CSharp
         m_MethodName: generateNinjin
         m_Mode: 1
@@ -2897,51 +2899,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681548081}
   m_CullTransparentMesh: 1
---- !u!1 &1689040217
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1689040219}
-  - component: {fileID: 1689040218}
-  m_Layer: 0
-  m_Name: waterCreator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1689040218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689040217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 304d7925ad94d4404b440981216e08e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ninjin: {fileID: 1989733160008696678, guid: b9957705001c34bfeb282be936fad487, type: 3}
-  water: {fileID: 2109934562055784996, guid: f4b068ad81bc44d02aad8ead3a9a0d73, type: 3}
---- !u!4 &1689040219
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689040217}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.2, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1808735426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,7 +2942,7 @@ Transform:
   m_Children:
   - {fileID: 172888720}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1873308835
 GameObject:
@@ -3366,8 +3323,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 844803625}
-        m_TargetAssemblyTypeName: NinjinCreator, Assembly-CSharp
+      - m_Target: {fileID: 1224483473}
+        m_TargetAssemblyTypeName: FoodCreator, Assembly-CSharp
         m_MethodName: generateNinjin
         m_Mode: 1
         m_Arguments:
@@ -3471,12 +3428,69 @@ PrefabInstance:
       propertyPath: m_Name
       value: Usagi_ninjin
       objectReference: {fileID: 0}
-    - target: {fileID: 189711262443214877, guid: 551950e0ee64b41f08de9b12eadd7245, type: 3}
+    - target: {fileID: 4728943337559297800, guid: 551950e0ee64b41f08de9b12eadd7245, type: 3}
       propertyPath: scoreCount
       value: 
       objectReference: {fileID: 1808735426}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 551950e0ee64b41f08de9b12eadd7245, type: 3}
+--- !u!1001 &1384905409690078333
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784993, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2109934562055784996, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
+      propertyPath: m_Name
+      value: timothy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b969063a9f8734143ac1f0120ecd2f95, type: 3}
 --- !u!1001 &1989733160469570715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3599,3 +3613,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4b068ad81bc44d02aad8ead3a9a0d73, type: 3}
+--- !u!1001 &3904839073381473661
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3453728617270604642, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: scoreCount
+      value: 
+      objectReference: {fileID: 1808735426}
+    - target: {fileID: 5516082708915748772, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_Name
+      value: Usagi_timothy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516082708915748773, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d467564336fb4dfda2dedc63a6ffada, type: 3}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 189711261512870632}
   - component: {fileID: 7177715589574801808}
   m_Layer: 0
-  m_Name: Usagi_ninjin
+  m_Name: Usagi_ichigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 189711262443214875}
   - component: {fileID: 189711262443214876}
   - component: {fileID: 189711262443214879}
-  - component: {fileID: 4728943337559297800}
+  - component: {fileID: 4376466811056888664}
   m_Layer: 0
   m_Name: usagi
   m_TagString: usagi
@@ -177,7 +177,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4728943337559297800
+--- !u!114 &4376466811056888664
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 189711262443214872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 643d00143b4a544b189b84d996b09e31, type: 3}
+  m_Script: {fileID: 11500000, guid: b545c4bafce0040bd94bb6e317b0f186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreCount: {fileID: 0}
@@ -219,7 +219,7 @@ Transform:
   m_GameObject: {fileID: 2690353584172584355}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.001999855, y: 1.2700037, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.06, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 189711261512870632}
   m_RootOrder: 1
@@ -264,7 +264,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 484f2a786d3e94b21b5b38ba939d8e13, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e5bb32f8bc6824a1aa4f422a9e4e6233, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

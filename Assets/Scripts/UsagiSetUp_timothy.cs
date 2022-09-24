@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
-public class UsagiSetUp_ninjin : MonoBehaviour
+public class UsagiSetUp_timothy : MonoBehaviour
 {
     public GameObject scoreCount;
 
@@ -24,20 +22,20 @@ public class UsagiSetUp_ninjin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
         // もらったご飯によってうさぎの反応を表す画像に変更する
-        if (other.gameObject.CompareTag("ninjin"))
+        if (other.gameObject.CompareTag("timothy"))
         {
-            Debug.Log("にんじんだー！");
-            scoreCount.GetComponent<ScoreCount>().ninjinScore();     // スコア加点
+            Debug.Log("チモシー！");
+            scoreCount.GetComponent<ScoreCount>().timothyScore();     // スコア加点
             var spriteRenderer = TargetSprite.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = GoodSprite;
         }
-        else if (other.gameObject.CompareTag("water") || other.gameObject.CompareTag("timothy")
+        else if (other.gameObject.CompareTag("ninjin") || other.gameObject.CompareTag("water")
             || other.gameObject.CompareTag("apple") || other.gameObject.CompareTag("ichigo") || other.gameObject.CompareTag("gohan"))
         {
             Debug.Log("これじゃない");

@@ -37,7 +37,8 @@ public class UsagiSetUp_water : MonoBehaviour
             var spriteRenderer = TargetSprite.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = GoodSprite;
         }
-        else if (other.gameObject.CompareTag("ninjin"))
+        else if (other.gameObject.CompareTag("ninjin") || other.gameObject.CompareTag("timothy")
+            || other.gameObject.CompareTag("apple") || other.gameObject.CompareTag("ichigo") || other.gameObject.CompareTag("gohan"))
         {
             Debug.Log("これじゃない");
             scoreCount.GetComponent<ScoreCount>().minusScore();     // スコア減点
