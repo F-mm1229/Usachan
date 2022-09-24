@@ -28,7 +28,7 @@ public class UsagiCreator : MonoBehaviour
         // にんじんが欲しいうさぎをランダムな場所に出現させる
         if (timer_ninjin >= interval_ninjin)
         {
-            transform.position = new Vector3(Random.Range(-2.0f, 2.0f), Random.Range(-1.4f, 1.4f), 0);
+            transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
             Instantiate(usagi_ninjin, transform.position, transform.rotation);
 
             timer_ninjin = 0;
@@ -37,7 +37,7 @@ public class UsagiCreator : MonoBehaviour
         // お水が欲しいうさぎをランダムな場所に出現させる
         if (timer_water >= interval_water)
         {
-            transform.position = new Vector3(Random.Range(-2.0f, 2.0f), Random.Range(-1.4f, 1.4f), 0);
+            transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
             Instantiate(usagi_water, transform.position, transform.rotation);
 
             timer_water = 0;

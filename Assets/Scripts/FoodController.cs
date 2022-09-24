@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FoodController : MonoBehaviour
 {
-    float delayUntilDestroyed = 15;         // 何秒後に消すのか
+    float delayUntilDestroyed = 10;         // 何秒後に消すのか
 
     // Start is called before the first frame update
     void Start()

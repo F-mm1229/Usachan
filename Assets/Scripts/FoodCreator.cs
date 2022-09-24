@@ -22,12 +22,14 @@ public class FoodCreator : MonoBehaviour
     // にんじんを指定した位置に複製する関数
     public void generateNinjin()
     {
-        Instantiate(ninjin, new Vector2(7.5f, 0.4f), transform.rotation);
+        transform.position = new Vector3(Random.Range(-8.0f, 8.0f), -4.2f, 0);
+        Instantiate(ninjin, transform.position, transform.rotation);
     }
 
     // お水を指定した位置に複製する関数
     public void generateWater()
     {
-        Instantiate(water, new Vector2(4.7f, 0.3f), transform.rotation);
+        transform.position = new Vector3(Random.Range(-8.0f, 8.0f), -4.2f, 0);
+        Instantiate(water,  transform.position, transform.rotation);
     }
 }
