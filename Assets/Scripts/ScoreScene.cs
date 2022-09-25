@@ -8,13 +8,16 @@ public class ScoreScene : MonoBehaviour
     public Text score;
     public Text TotalScore;
 
-    public Text revel;
-    public Text penName;
+    public Text revelText;
+    public Text penNameText;
+
+    public static int revel;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        revel = 1;
+        TotalScore.text = "Total Score : " + ScoreCount.totalScore.ToString();
     }
 
     // Update is called once per frame
@@ -25,23 +28,27 @@ public class ScoreScene : MonoBehaviour
 
         if (ScoreCount.totalScore >= 400)
         {
-            revel.text = "2";
-            penName.text = "ふつうのかいぬし";
+            revel = 2;
+            revelText.text = "2";
+            penNameText.text = "ふつうのかいぬし";
         }
         if (ScoreCount.totalScore >= 500)
         {
-            revel.text = "3";
-            penName.text = "しごとができるかいぬし";
+            revel = 3;
+            revelText.text = "3";
+            penNameText.text = "しごとができるかいぬし";
         }
         if (ScoreCount.totalScore >= 700)
         {
-            revel.text = "4";
-            penName.text = "りっぱなかいぬし";
+            revel = 4;
+            revelText.text = "4";
+            penNameText.text = "りっぱなかいぬし";
         }
         if (ScoreCount.totalScore >= 900)
         {
-            revel.text = "5";
-            penName.text = "スーパーかいぬし";
+            revel = 5;
+            revelText.text = "5";
+            penNameText.text = "スーパーかいぬし";
         }
     }
 }

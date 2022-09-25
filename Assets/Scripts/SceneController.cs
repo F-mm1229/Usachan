@@ -22,6 +22,7 @@ public class SceneController : MonoBehaviour
     public void toMain()
     {
         SceneManager.LoadScene("Main");
+        ScoreCount.scoreSum = 0;
     }
 
     public void toScoreScene()

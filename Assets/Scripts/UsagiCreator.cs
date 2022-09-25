@@ -29,7 +29,7 @@ public class UsagiCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -62,39 +62,53 @@ public class UsagiCreator : MonoBehaviour
         }
 
         // チモシーが欲しいうさぎをランダムな場所に出現させる
-        if (timer_timothy >= interval_timothy)
+        if (ScoreScene.revel >= 2)
         {
-            transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
-            Instantiate(usagi_timothy, transform.position, transform.rotation);
+            if (timer_timothy >= interval_timothy)
+            {
+                transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
+                Instantiate(usagi_timothy, transform.position, transform.rotation);
 
-            timer_timothy = 0;
+                timer_timothy = 0;
+            }
+
         }
 
         // りんごが欲しいうさぎをランダムな場所に出現させる
-        if (timer_apple >= interval_apple)
+        if (ScoreScene.revel >= 3)
         {
-            transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
-            Instantiate(usagi_apple, transform.position, transform.rotation);
+            if (timer_apple >= interval_apple)
+            {
+                transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
+                Instantiate(usagi_apple, transform.position, transform.rotation);
 
-            timer_apple = 0;
+                timer_apple = 0;
+            }
         }
 
         // いちごが欲しいうさぎをランダムな場所に出現させる
-        if (timer_ichigo >= interval_ichigo)
+        if (ScoreScene.revel >= 4)
         {
-            transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
-            Instantiate(usagi_ichigo, transform.position, transform.rotation);
+            if (timer_ichigo >= interval_ichigo)
+            {
+                transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
+                Instantiate(usagi_ichigo, transform.position, transform.rotation);
 
-            timer_ichigo = 0;
+                timer_ichigo = 0;
+            }
         }
 
         // ごはんが欲しいうさぎをランダムな場所に出現させる
-        if (timer_gohan >= interval_gohan)
+        if (ScoreScene.revel >= 5)
         {
-            transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
-            Instantiate(usagi_gohan, transform.position, transform.rotation);
+            if (timer_gohan >= interval_gohan)
+            {
+                transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
+                Instantiate(usagi_gohan, transform.position, transform.rotation);
 
-            timer_gohan = 0;
+                timer_gohan = 0;
+            }
         }
     }
+
 }

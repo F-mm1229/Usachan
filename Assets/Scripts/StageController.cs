@@ -24,7 +24,6 @@ public class StageController : MonoBehaviour
     {
         FoodArea.SetActive(false);
         UsagiArea.SetActive(true);
-        Debug.Log("FoodArea");
     }
 
     public void ChangeToUsagi()

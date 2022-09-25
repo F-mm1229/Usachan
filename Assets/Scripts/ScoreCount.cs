@@ -19,6 +19,8 @@ public class ScoreCount : MonoBehaviour
     {
         totalScore = PlayerPrefs.GetInt("SCORE", 0);
         a_color = 0;
+
+        
     }
 
     // Update is called once per frame
@@ -52,6 +54,18 @@ public class ScoreCount : MonoBehaviour
         scoreEffect(50);
     }
 
+    public void ichigoScore()
+    {
+        scoreSum += 50;
+        scoreEffect(50);
+    }
+
+    public void gohanScore()
+    {
+        scoreSum += 50;
+        scoreEffect(50);
+    }
+
     public void minusScore()
     {
         scoreSum -= 5;
@@ -80,6 +94,15 @@ public class ScoreCount : MonoBehaviour
         totalScore += scoreSum;
         PlayerPrefs.SetInt("SCORE", totalScore);
         PlayerPrefs.Save();
+    }
+
+    public void totalScoreReset()
+    {
+        totalScore = 0;
+        PlayerPrefs.SetInt("SCORE", 0);
+        PlayerPrefs.Save();
+        ScoreScene.revel = 1;
+        Debug.Log("reset");
     }
 
     public void scoreReset()
