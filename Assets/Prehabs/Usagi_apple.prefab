@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 189711261512870632}
   - component: {fileID: 7177715589574801808}
+  - component: {fileID: 6056260314111677756}
   m_Layer: 0
   m_Name: Usagi_apple
   m_TagString: Untagged
@@ -45,6 +46,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6885f9c632ec74f6eb1bbe01281a7811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!210 &6056260314111677756
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189711261512870633}
+  m_Enabled: 1
+  m_SortingLayerID: 1533626983
+  m_SortingLayer: -1
+  m_SortingOrder: 0
 --- !u!1 &189711262443214872
 GameObject:
   m_ObjectHideFlags: 0

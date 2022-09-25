@@ -45,6 +45,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: usagi
+    uniqueID: 1533626983
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
