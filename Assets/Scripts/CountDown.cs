@@ -13,6 +13,10 @@ public class CountDown : MonoBehaviour
 
     public SceneController sceneController;
 
+    public Image UIobj;
+    public bool roop;
+    public float countTime = 5.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,13 +27,18 @@ public class CountDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TextCountDown.text = String.Format("残り時間 : {0:00}", CountDownTime);
+        TextCountDown.text = String.Format("{0:00}", CountDownTime);
         CountDownTime -= Time.deltaTime;
 
         if (CountDownTime <= 0.0f)
         {
             scoreCount.GetComponent<ScoreCount>().scoreSave();     // スコア保存
             sceneController.toScoreScene();
+        }
+
+        if (roop)
+        {
+            UIobj.fillAmount -= 1.0f / countTime * Time.deltaTime;
         }
     }
 }
