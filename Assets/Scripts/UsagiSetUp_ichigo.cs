@@ -5,6 +5,7 @@ using UnityEngine;
 public class UsagiSetUp_ichigo : MonoBehaviour
 {
     public GameObject scoreCount;
+    public Collider2D usagi;
 
     // 変更したい画像（変更前）
     public GameObject TargetSprite;
@@ -34,6 +35,8 @@ public class UsagiSetUp_ichigo : MonoBehaviour
             scoreCount.GetComponent<ScoreCount>().ichigoScore();     // スコア加点
             var spriteRenderer = TargetSprite.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = GoodSprite;
+            usagi = GetComponent<Collider2D>();
+            usagi.isTrigger = false;
         }
         else if (other.gameObject.CompareTag("ninjin") || other.gameObject.CompareTag("timothy")
             || other.gameObject.CompareTag("water") || other.gameObject.CompareTag("apple") || other.gameObject.CompareTag("gohan"))
@@ -42,6 +45,8 @@ public class UsagiSetUp_ichigo : MonoBehaviour
             scoreCount.GetComponent<ScoreCount>().minusScore();     // スコア減点
             var spriteRenderer = TargetSprite.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = BadSprite;
+            usagi = GetComponent<Collider2D>();
+            usagi.isTrigger = false;
         }
 
     }

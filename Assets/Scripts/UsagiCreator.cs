@@ -19,12 +19,12 @@ public class UsagiCreator : MonoBehaviour
     float timer_ichigo = 0;             // いちごが欲しいうさぎのタイマー
     float timer_gohan = 0;              // ごはんが欲しいうさぎのタイマー
 
-    int interval_ninjin = 6;            // にんじんが欲しいうさぎが出現する間隔
-    int interval_water = 10;            // お水が欲しいうさぎが出現する間隔
-    int interval_timothy = 8;           // チモシーが欲しいうさぎが出現する間隔
-    int interval_apple = 11;            // りんごが欲しいうさぎが出現する間隔
-    int interval_ichigo = 12;           // いちごが欲しいうさぎが出現する間隔
-    int interval_gohan = 15;            // ごはんが欲しいうさぎが出現する間隔
+    float interval_ninjin =  5.2f;            // にんじんが欲しいうさぎが出現する間隔
+    float interval_water = 8.3f;            // お水が欲しいうさぎが出現する間隔
+    float interval_timothy = 9f;           // チモシーが欲しいうさぎが出現する間隔
+    float interval_apple = 7.5f;            // りんごが欲しいうさぎが出現する間隔
+    float interval_ichigo = 11.4f;           // いちごが欲しいうさぎが出現する間隔
+    float interval_gohan = 12.1f;            // ごはんが欲しいうさぎが出現する間隔
 
     // Start is called before the first frame update
     void Start()
