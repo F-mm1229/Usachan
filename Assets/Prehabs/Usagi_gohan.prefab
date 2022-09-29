@@ -207,8 +207,8 @@ MonoBehaviour:
   scoreCount: {fileID: 0}
   usagi: {fileID: 189711262443214876}
   TargetSprite: {fileID: 2690353584172584355}
-  GoodSprite: {fileID: 21300000, guid: c74d00a3a4c034857838987d52326225, type: 3}
-  BadSprite: {fileID: 21300000, guid: b5086e82201a64ece9a7b8e98e8331dc, type: 3}
+  GoodSprite: {fileID: 21300000, guid: 473a132308cb54f36bb1bdcb008e5304, type: 3}
+  BadSprite: {fileID: 21300000, guid: 947da7da965bf4360bcf8111204c22c3, type: 3}
 --- !u!1 &2690353584172584355
 GameObject:
   m_ObjectHideFlags: 0

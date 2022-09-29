@@ -207,8 +207,8 @@ MonoBehaviour:
   scoreCount: {fileID: 0}
   usagi: {fileID: 5516082710366702929}
   TargetSprite: {fileID: 7744780445544028398}
-  GoodSprite: {fileID: 21300000, guid: c74d00a3a4c034857838987d52326225, type: 3}
-  BadSprite: {fileID: 21300000, guid: b5086e82201a64ece9a7b8e98e8331dc, type: 3}
+  GoodSprite: {fileID: 21300000, guid: 473a132308cb54f36bb1bdcb008e5304, type: 3}
+  BadSprite: {fileID: 21300000, guid: 947da7da965bf4360bcf8111204c22c3, type: 3}
 --- !u!1 &7744780445544028398
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,8 +235,8 @@ Transform:
   m_GameObject: {fileID: 7744780445544028398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.001999855, y: 1.2700037, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.3, y: 0.3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5516082708915748773}
   m_RootOrder: 1
@@ -282,12 +282,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9f39737eaddaf479ebb6c205754b9504, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f079dd91c74b84b839f2f5ee25b1c3c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5, y: 13.12}
+  m_Size: {x: 2.5, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

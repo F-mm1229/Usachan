@@ -26,6 +26,12 @@ public class ScoreScene : MonoBehaviour
         score.text = "Score : " + ScoreCount.scoreSum.ToString();
         TotalScore.text = "Total Score : " + ScoreCount.totalScore.ToString();
 
+        if (ScoreCount.totalScore >= 0)
+        {
+            revel = 1;
+            revelText.text = "1";
+            penNameText.text = "みならいのかいぬし";
+        }
         if (ScoreCount.totalScore >= 200)
         {
             revel = 2;
