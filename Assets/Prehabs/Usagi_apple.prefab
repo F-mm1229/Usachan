@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &189711261512870632
 Transform:
   m_ObjectHideFlags: 0
@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreCount: {fileID: 0}
+  se: {fileID: 0}
   usagi: {fileID: 189711262443214876}
   TargetSprite: {fileID: 2690353584172584355}
   GoodSprite: {fileID: 21300000, guid: 473a132308cb54f36bb1bdcb008e5304, type: 3}

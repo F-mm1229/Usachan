@@ -5,6 +5,7 @@ using UnityEngine;
 public class UsagiSetUp_apple : MonoBehaviour
 {
     public GameObject scoreCount;
+    public GameObject se;
     public Collider2D usagi;
 
     // 変更したい画像（変更前）
@@ -18,6 +19,7 @@ public class UsagiSetUp_apple : MonoBehaviour
     void Start()
     {
         scoreCount = GameObject.Find("ScoreCount");
+        se = GameObject.Find("SE");
     }
 
     // Update is called once per frame
@@ -32,6 +34,7 @@ public class UsagiSetUp_apple : MonoBehaviour
         if (other.gameObject.CompareTag("apple"))
         {
             Debug.Log("りんごだー！");
+            se.GetComponent<SE>().Kirakira();
             scoreCount.GetComponent<ScoreCount>().appleScore();     // スコア加点
             var spriteRenderer = TargetSprite.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = GoodSprite;
@@ -42,6 +45,7 @@ public class UsagiSetUp_apple : MonoBehaviour
             || other.gameObject.CompareTag("water") || other.gameObject.CompareTag("ichigo") || other.gameObject.CompareTag("gohan"))
         {
             Debug.Log("これじゃない");
+            se.GetComponent<SE>().Buzzer();
             scoreCount.GetComponent<ScoreCount>().minusScore();     // スコア減点
             var spriteRenderer = TargetSprite.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = BadSprite;

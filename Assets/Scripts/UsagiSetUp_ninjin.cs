@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class UsagiSetUp_ninjin : MonoBehaviour
 {
     public GameObject scoreCount;
+    public GameObject se;
     public Collider2D usagi;
 
     // 変更したい画像（変更前）
@@ -20,6 +21,7 @@ public class UsagiSetUp_ninjin : MonoBehaviour
     void Start()
     {
         scoreCount = GameObject.Find("ScoreCount");
+        se = GameObject.Find("SE");
     }
 
     // Update is called once per frame
@@ -34,6 +36,7 @@ public class UsagiSetUp_ninjin : MonoBehaviour
         if (other.gameObject.CompareTag("ninjin"))
         {
             Debug.Log("にんじんだー！");
+            se.GetComponent<SE>().Kirakira();
             scoreCount.GetComponent<ScoreCount>().ninjinScore();     // スコア加点
             var spriteRenderer = TargetSprite.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = GoodSprite;
@@ -44,6 +47,7 @@ public class UsagiSetUp_ninjin : MonoBehaviour
             || other.gameObject.CompareTag("apple") || other.gameObject.CompareTag("ichigo") || other.gameObject.CompareTag("gohan"))
         {
             Debug.Log("これじゃない");
+            se.GetComponent<SE>().Buzzer();
             scoreCount.GetComponent<ScoreCount>().minusScore();     // スコア減点
             var spriteRenderer = TargetSprite.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = BadSprite;
