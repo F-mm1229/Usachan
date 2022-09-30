@@ -8,6 +8,8 @@ public class SE : MonoBehaviour
     public AudioClip timeUp;
     public AudioClip buzzer;
     public AudioClip kirakira;
+    public AudioClip pop_1;
+    public AudioClip pop_2;
 
     AudioSource audioSource;
 
@@ -39,5 +41,15 @@ public class SE : MonoBehaviour
     public void Kirakira()
     {
         audioSource.PlayOneShot(kirakira);
+    }
+
+    public void Pop_1()
+    {
+        audioSource.PlayOneShot(pop_1);
+    }
+
+    public void Pop_2()
+    {
+        audioSource.PlayOneShot(pop_2);
     }
 }

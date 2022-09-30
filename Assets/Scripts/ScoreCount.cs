@@ -32,25 +32,25 @@ public class ScoreCount : MonoBehaviour
 
     public void ninjinScore()
     {
-        scoreSum += 30;
+        scoreSum += 20;
         scoreEffect(30);
     }
 
     public void waterScore()
     {
-        scoreSum += 20;
+        scoreSum += 30;
         scoreEffect(20);
     }
 
     public void timothyScore()
     {
-        scoreSum += 50;
+        scoreSum += 40;
         scoreEffect(50);
     }
 
     public void appleScore()
     {
-        scoreSum += 50;
+        scoreSum += 40;
         scoreEffect(50);
     }
 
@@ -68,8 +68,8 @@ public class ScoreCount : MonoBehaviour
 
     public void minusScore()
     {
-        scoreSum -= 5;
-        scoreEffect(-5);
+        scoreSum -= 10;
+        scoreEffect(-10);
     }
 
     public void scoreEffect(int i)

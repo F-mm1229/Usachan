@@ -12,12 +12,12 @@ public class UsagiCreator : MonoBehaviour
     public GameObject usagi_gohan;      // ごはんが欲しいうさぎ
 
 
-    float timer_ninjin = 0;             // にんじんが欲しいうさぎのタイマー
-    float timer_water = 0;              // お水が欲しいうさぎのタイマー
-    float timer_timothy = 0;            // チモシーが欲しいうさぎのタイマー
+    float timer_ninjin = 5f;             // にんじんが欲しいうさぎのタイマー
+    float timer_water = 6f;              // お水が欲しいうさぎのタイマー
+    float timer_timothy = 4f;            // チモシーが欲しいうさぎのタイマー
     float timer_apple = 0;              // りんごが欲しいうさぎのタイマー
-    float timer_ichigo = 0;             // いちごが欲しいうさぎのタイマー
-    float timer_gohan = 0;              // ごはんが欲しいうさぎのタイマー
+    float timer_ichigo = 3f;             // いちごが欲しいうさぎのタイマー
+    float timer_gohan = 6.5f;              // ごはんが欲しいうさぎのタイマー
 
     float interval_ninjin =  5.2f;            // にんじんが欲しいうさぎが出現する間隔
     float interval_water = 8.3f;            // お水が欲しいうさぎが出現する間隔
@@ -29,7 +29,7 @@ public class UsagiCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Debug.Log(ScoreScene.revel);
     }
 
     // Update is called once per frame
@@ -46,7 +46,7 @@ public class UsagiCreator : MonoBehaviour
         // にんじんが欲しいうさぎをランダムな場所に出現させる
         if (timer_ninjin >= interval_ninjin)
         {
-            transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
+            transform.position = new Vector3(Random.Range(-8.0f, 2.0f), Random.Range(-2.5f, 1.5f), 0);
             Instantiate(usagi_ninjin, transform.position, transform.rotation);
 
             timer_ninjin = 0;
@@ -55,7 +55,7 @@ public class UsagiCreator : MonoBehaviour
         // お水が欲しいうさぎをランダムな場所に出現させる
         if (timer_water >= interval_water)
         {
-            transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
+            transform.position = new Vector3(Random.Range(-8.0f, 2.0f), Random.Range(-2.5f, 1.5f), 0);
             Instantiate(usagi_water, transform.position, transform.rotation);
 
             timer_water = 0;
@@ -66,7 +66,7 @@ public class UsagiCreator : MonoBehaviour
         {
             if (timer_timothy >= interval_timothy)
             {
-                transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
+                transform.position = new Vector3(Random.Range(-8.0f, 2.0f), Random.Range(-2.5f, 1.5f), 0);
                 Instantiate(usagi_timothy, transform.position, transform.rotation);
 
                 timer_timothy = 0;
@@ -79,7 +79,7 @@ public class UsagiCreator : MonoBehaviour
         {
             if (timer_apple >= interval_apple)
             {
-                transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
+                transform.position = new Vector3(Random.Range(-8.0f, 2.0f), Random.Range(-2.5f, 1.5f), 0);
                 Instantiate(usagi_apple, transform.position, transform.rotation);
 
                 timer_apple = 0;
@@ -91,7 +91,7 @@ public class UsagiCreator : MonoBehaviour
         {
             if (timer_ichigo >= interval_ichigo)
             {
-                transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
+                transform.position = new Vector3(Random.Range(-8.0f, 2.0f), Random.Range(-2.5f, 1.5f), 0);
                 Instantiate(usagi_ichigo, transform.position, transform.rotation);
 
                 timer_ichigo = 0;
@@ -103,7 +103,7 @@ public class UsagiCreator : MonoBehaviour
         {
             if (timer_gohan >= interval_gohan)
             {
-                transform.position = new Vector3(Random.Range(-8.0f, 1.5f), Random.Range(-2.5f, 1.5f), 0);
+                transform.position = new Vector3(Random.Range(-8.0f, 2.0f), Random.Range(-2.5f, 1.5f), 0);
                 Instantiate(usagi_gohan, transform.position, transform.rotation);
 
                 timer_gohan = 0;

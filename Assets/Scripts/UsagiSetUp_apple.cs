@@ -15,6 +15,7 @@ public class UsagiSetUp_apple : MonoBehaviour
     public Sprite GoodSprite;
     public Sprite BadSprite;
 
+
     // Start is called before the first frame update
     void Start()
     {
