@@ -32,7 +32,7 @@ public class ScoreScene : MonoBehaviour
         {
             revel = 1;
             revelText.text = "1";
-            penNameText.text = "みならいのかいぬし";
+            penNameText.text = "みならいかいぬし";
             revelSave();
         }
         if (ScoreCount.totalScore >= 200)
