@@ -992,6 +992,8 @@ MonoBehaviour:
   timeUp: {fileID: 8300000, guid: d2e6b81d03ece4d18b68e9327093acf2, type: 3}
   buzzer: {fileID: 8300000, guid: 59ac64fc2df32486aa86695e9fbd3cd0, type: 3}
   kirakira: {fileID: 8300000, guid: 22165aed6521a4b339f65103bfb0d3c6, type: 3}
+  pop_1: {fileID: 0}
+  pop_2: {fileID: 0}
 --- !u!82 &437800073
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1785,7 +1787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &891381044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2752,7 +2754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1444785915
 RectTransform:
   m_ObjectHideFlags: 0
