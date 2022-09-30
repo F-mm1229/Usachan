@@ -23,6 +23,7 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
         ScoreCount.scoreSum = 0;
+        ScoreScene.revel = PlayerPrefs.GetInt("REVEL", ScoreScene.revel);
     }
 
     public void toScoreScene()
